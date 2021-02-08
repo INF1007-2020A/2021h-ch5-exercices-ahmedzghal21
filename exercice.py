@@ -6,9 +6,11 @@ from typing import List
 
 
 def convert_to_absolute(number: float) -> float:
-    return 0
 
-
+    number=str(number)
+    number=number[1:]
+    return float(number)
+""""
 def use_prefixes() -> List[str]:
     prefixes, suffixe = 'JKLMNOPQ', 'ack'
 
@@ -29,12 +31,12 @@ def use_continue() -> None:
 
 def verify_ages(groups: List[List[int]]) -> List[bool]:
     return []
-
+"""
 
 def main() -> None:
     number = -4.325
     print(f"La valeur absolue du nombre {number} est {convert_to_absolute(number)}")
-
+""""
     print(f"La liste des noms générés avec les préfixes est: {use_prefixes()}")
 
     print(f"La somme des 100 premiers nombre premier est : {prime_integer_summation()}")
@@ -52,7 +54,7 @@ def main() -> None:
     ]
     print(f"Les différents groupes sont: {groups}")
     print(f"L'acceptance des groupes est: {verify_ages(groups)}")
-
+"""
 
 if __name__ == '__main__':
     main()
